@@ -1,0 +1,51 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;  /* 2欄 */
+    grid-template-rows: 1fr 1fr;     /* 2列 */
+    width: 100vw;
+    height: 100vh;
+    gap: 0;                          /* 沒有間距 */
+  }
+  
+  .school-block {
+    position: relative;
+    overflow: hidden;
+    width: 90%;
+    height: 90%;
+  }
+  
+  .school-block img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;              /* 填滿格子 */
+    display: block;
+  }
+  
+  /* Hover 顯示文字 */
+  .school-block a {
+    position: absolute;
+    height: 13%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(73, 2, 205, 0.6);
+    color: white;
+    font-family: cursive;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.3rem;
+    transition: opacity 0.5s ease,background-color 0.5s ;
+    transform: background-color 0.5s;
+    text-decoration: none;
+  }
+  
+  .school-block a:hover{
+    background-color: rgb(185, 0, 205,0.6);
+  }
+  .school-block:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+  }
+  .school-block{                                    /*hover,unhover都有動畫*/
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+  }
