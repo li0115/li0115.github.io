@@ -1,0 +1,84 @@
+header{
+    font-size: 40px;
+    color: rgb(249, 156, 171);
+    font-family: cursive;
+    padding:10px 0;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+}
+.網站{
+    width: 100vw;
+    height: 130px;
+    display: flex;
+    justify-content: space-evenly;/*平均分配*/
+    flex-direction: row;
+}
+.網站2{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;/*平均分配*/
+}
+.筆記{
+    width: 100vw;
+    height: 130px;
+    display: flex;
+    justify-content: space-evenly;/*平均分配*/
+    flex-direction: row;
+}
+.筆記2{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;/*平均分配*/
+    align-items: center;
+}
+.筆記2 a{
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 7px;
+    transition: background-color 0.5s;
+}
+.筆記2 a:hover{
+    background-color: pink;
+    color: rgb(68, 68, 68);
+}
+main img{
+    margin-top: 10px;
+    height: 100px;
+    transition: height 0.5s,transform 1s;
+}
+main img:hover{
+    height: 110px;
+    transform: rotate(10deg);
+    
+}
+main p{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+main{
+    
+    font-family: cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;/*平均分配*/
+    background-color: rgb(72, 72, 72);
+    background-blend-mode: multiply;
+    background-image: url(background-2.JPG);
+    background-repeat: no-repeat;
+    background-size: 1500px;
+    background-position:center -800px;
+    background-attachment: fixed;
+}
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(211, 213, 213);
+    position: absolute;
+    margin-bottom: 0px;
+    width: 99%;
+    
+    
+}
