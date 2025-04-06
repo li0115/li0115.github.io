@@ -1,0 +1,121 @@
+
+header{
+    font-size: 40px;
+    background-image: linear-gradient(to  bottom,rgb(255, 165, 180),rgb(118, 62, 116));
+    color: pink;
+    font-family: cursive;
+    padding:10px 0;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    text-shadow: -1px -1px white, 1px 1px #333;
+}
+nav{
+    font-size: 20px;
+    font-weight: 900;
+    font-family: serif;
+    padding: 12px;
+    display: flex;
+    justify-content: space-evenly;
+    background-image: linear-gradient(to  bottom,rgb(118, 62, 116),#2d0a5a);
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.5s;          /*hover change color延遲0.5s*/
+    padding: 10px;
+    margin: -10px;
+}
+
+.about_me{
+    background-color: rgb(255, 205, 205);
+   
+    margin-bottom:-12px;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+    transition: background-color 0.5s;          /*hover change color延遲0.5s*/
+}
+.homework{
+    background-color: rgb(255, 205, 205);
+    margin-bottom: -12px;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+    transition: background-color 0.5s;          /*hover change color延遲0.5s*/
+}
+.homework:hover,.about_me:hover{
+    background-color: black;
+
+}
+
+
+nav a:hover{
+    color: pink;
+}
+main{
+    
+    font-family: cursive;
+    display: flex;
+    justify-content: space-evenly;/*平均分配*/
+    height: 630px;
+    width:100%;
+    flex-direction: row;
+    background-color: rgb(99, 98, 98);
+    background-blend-mode: multiply;
+    background-image: url(background-1.JPG);
+    background-repeat: no-repeat;
+    background-size: 1770px;
+    background-position: center -200px;
+    background-attachment: fixed;
+}
+.selfie{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-top: 20px ;
+    width: 35%;
+}
+.selfie img{
+    width: 70%;          /* 滿容器寬 */
+    max-width: 200px;     /* 最大寬度限制 */
+    min-width: 150px; 
+   margin: 0 auto;
+  
+}
+.selfie dt{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-shadow: 0.5px 0.5px pink;
+}
+.personal{
+    width: 55%;
+}
+.personal dt,dd{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-shadow: 0.5px 0.5px pink;
+
+}
+
+footer{
+    
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(211, 213, 213);
+    position: absolute;
+    margin-bottom: 0px;
+    width: 99%;
+}
+
+/* .rotating img{
+    background-color: aliceblue;
+    width: 50px;
+    position: fixed;
+    bottom:30px;
+    right: 10px;
+    animation: Rotate 2s ease-in 0s infinite alternate;
+    
+}
+@keyframes Rotate{
+    0%{top: 50px;}
+    100%{top:650px}
+} */
