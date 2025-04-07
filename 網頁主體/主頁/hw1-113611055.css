@@ -97,15 +97,35 @@ main{
 }
 
 footer{
-    
     display: flex;
     justify-content: space-evenly;
     background-color: rgb(211, 213, 213);
-    position: absolute;
-    margin-bottom: 0px;
-    width: 99%;
+    /* 移除 absolute 定位 */
+    position: relative;
+    width: 100%;
 }
 
+/* 如果希望 footer 固定在頁面底部 */
+footer.fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column;  /* 變成縱向排列 */
+        background-size: cover;
+        background-repeat: repeat;
+        height: 100%;
+    }
+
+    .selfie, .personal {
+        width: 100%;  /* 讓每個區塊都佔滿100%的寬度 */
+        margin-bottom: 20px;  /* 區塊之間加入一些間距 */
+        text-align: center;
+    }
+}
 /* .rotating img{
     background-color: aliceblue;
     width: 50px;
