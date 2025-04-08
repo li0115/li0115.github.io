@@ -27,21 +27,14 @@ nav a{
     margin: -10px;
 }
 
-.about_me{
+.about_me ,.homework ,.game{
     background-color: rgb(255, 205, 205);
-   
     margin-bottom:-12px;
     padding: 10px;
     border-radius: 5px 5px 0 0;
     transition: background-color 0.5s;          /*hover change color延遲0.5s*/
 }
-.homework{
-    background-color: rgb(255, 205, 205);
-    margin-bottom: -12px;
-    padding: 10px;
-    border-radius: 5px 5px 0 0;
-    transition: background-color 0.5s;          /*hover change color延遲0.5s*/
-}
+
 .homework:hover,.about_me:hover{
     background-color: black;
 
