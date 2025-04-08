@@ -35,7 +35,7 @@ function setup() {
 
 function preload() {
   backgroundImg = loadImage("https://i.imgur.com/29At4Qk.jpg"); // 加載背景圖片
-  bombImage = loadImage("https://li0115.github.io/bomb.png");
+  bombImage = loadImage("https://li0115.github.io/%E7%B6%B2%E9%A0%81%E4%B8%BB%E9%AB%94/%E7%B6%B2%E9%A0%81%E9%81%8A%E6%88%B2/%E8%B8%A9%E5%9C%B0%E9%9B%B7/bomb.png");
 
 }
 
