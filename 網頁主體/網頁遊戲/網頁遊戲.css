@@ -1,0 +1,104 @@
+header{
+    height: 6vh;
+    font-size: 35px;
+    color: rgb(251, 177, 190);
+    font-family: cursive;
+    padding:10px 0;
+    display: flex;
+    justify-content: center;
+    background-image: url(lighting.png);
+    background-position: 0%;
+}
+
+main {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    height: 83vh;
+    grid-template-columns: repeat(3, 1fr);  /* 3列，每列寬度平均 */
+    grid-template-rows: repeat(2, auto);    /* 2行，行高自動 */
+    gap: 20px;  /* 設定區塊間距 */
+    padding: 20px;
+    background-image: linear-gradient(to bottom, rgb(82, 41, 104), #000000);
+}
+.game-item {
+    display: flex;              /* 讓每個 game-item 使用 flexbox */
+    justify-content: center;    /* 水平置中 */
+    align-items: center;        /* 垂直置中 */
+    height: 80%;
+    width: 80%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-size: 100% auto; 
+    transition: transform 0.5s;
+}
+.game-item:hover{
+    transform: scale(1.05);
+}
+.game-item a:hover {
+    color: #ff2222;
+    background-color: rgb(0, 0, 0, 1);
+}
+
+
+.guess_number {
+    background-image: url(../網頁遊戲/猜數字遊戲/猜數字遊戲background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.guess_number a {
+    font-size: 30px;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.5s ease, background-color 0.5s;
+    color: #f5c8fd;
+    background-color: rgb(0, 0, 0, 0.4);
+    border-radius: 10px;
+    padding: 5px;
+}
+.lottery {
+    background-image: url(../網頁遊戲/樂透開獎/樂透開獎background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.lottery a {
+    font-size: 30px;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.5s ease, background-color 0.5s;
+    color: #c2ffe8;
+    background-color: rgb(0, 0, 0, 0.4);
+    border-radius: 10px;
+    padding: 5px;
+}
+.wordle {
+    background-image: url(../網頁遊戲/Wordle/Wordlebackground.png);
+    background-position: center ;
+    background-repeat: no-repeat;
+}
+.wordle a {
+    font-size: 30px;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.5s ease, background-color 0.5s;
+    color: #f9ffc2;
+    background-color: rgb(0, 0, 0, 0.4);
+    border-radius: 10px;
+    padding: 5px;
+}
+.landmine {
+    background-image: url(../網頁遊戲/踩地雷/踩地雷background.png);
+    background-position: center ;
+    background-repeat: no-repeat;
+}
+.landmine a {
+    font-size: 30px;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.5s ease, background-color 0.5s;
+    color: #c2d3ff;
+    background-color: rgb(0, 0, 0, 0.4);
+    border-radius: 10px;
+    padding: 5px;
+}
