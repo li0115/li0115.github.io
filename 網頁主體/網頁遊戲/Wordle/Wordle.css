@@ -1,0 +1,91 @@
+body{
+    height: 97vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(142, 141, 141);
+    background-blend-mode: multiply;
+    background-image: url(Wordle_background.png);
+    background-repeat: no-repeat;
+    background-size: 1500px;
+    background-position: center ;
+    background-attachment: fixed;
+    
+}
+
+#header{
+    display: flex;
+    margin: 5px;
+    font-size: 45px;
+    transform: translateY(-80px);
+    color: white;
+    font-family: fantasy;
+    
+}
+.header_title{
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    background-color: rgb(151, 151, 151);
+    margin-right: 5px;
+    border-radius: 10px;
+}
+#content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 440px;
+}
+#letter_area{
+    display: grid;
+    grid-template-columns: 45px 45px 45px 45px 45px;
+    transform: translateY(-50px);
+
+}
+.letter{
+    background-color: rgb(152, 152, 152);
+    border-radius: 5px;
+    height: 30px;
+    width: 30px;
+    font-size: 20px;
+    font-weight: 900;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    box-shadow: 2px 2px black;
+    
+}
+.key{
+    background-color: rgb(152, 152, 152);
+    border-radius: 5px;
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    text-shadow: 1.5px 1.5px black;
+    text-align: center;
+    padding: 2px;
+    margin: 2px;
+    color: rgb(255, 255, 255);
+}
+#record{
+    position: absolute;
+padding-bottom: 400px;
+    transform: translateX(30vw);
+   
+    color: white;
+    font-size: 15px;
+    width: 360px;
+}
+.background_grey{background-color: rgb(104, 104, 104);}
+.background_yellow{background-color: rgb(180, 185, 33);}
+.background_green{background-color: rgb(55, 148, 47);}
+#myCanvas{
+    position: absolute;
+    width: 1000px;
+    height: 200px;
+   
+    
+}
