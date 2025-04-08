@@ -35,7 +35,7 @@ nav a{
     transition: background-color 0.5s;          /*hover change color延遲0.5s*/
 }
 
-.homework:hover,.about_me:hover{
+.homework:hover,.about_me,.game:hover{
     background-color: black;
 
 }
