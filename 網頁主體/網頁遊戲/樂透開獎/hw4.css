@@ -1,0 +1,185 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(142, 141, 141);
+    background-blend-mode: multiply;
+    background-image: url(hw4_background.png);
+    background-repeat: no-repeat;
+    background-size: 1500px;
+    background-position: center ;
+    background-attachment: fixed;
+}
+header{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#start{
+  
+    margin-left: -50px;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 25px;
+    font-family: 'Times New Roman';
+    text-shadow: 1px 1px rgb(213, 213, 213);
+    background-color: rgba(255, 171, 62, 0.7);
+}
+#start:disabled{
+    background-color: rgb(97, 97, 98,0.5);
+}
+#stop{
+   
+    margin-left: 30px;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 25px;
+    font-family: 'Times New Roman';
+    text-shadow: 1px 1px rgb(189, 187, 187);
+    background-color: rgba(228, 54, 6, 0.896);
+}
+#stop:disabled{
+    background-color: rgb(97, 97, 98,0.5);
+}
+main{
+
+    width: 500px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-size: 50px;
+    font-family:cursive;
+    color: rgb(229, 195, 0);
+    text-shadow: 1.5px 1.5px rgb(255, 145, 0);
+}
+p{
+    color: aliceblue;
+    font-family: cursive;
+    font-size: 24px;
+    background-color: rgb(138, 138, 138,0.86);
+    border-radius: 20px;
+    width: 370px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.balls{
+    margin-top: 80px;
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+   
+}
+.ball{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 45px;
+    width: 90px;
+    height: 90px;
+    color: rgb(8, 222, 237);
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* 設定 slot-machine 容器的高度，並隱藏溢出的部分 */
+.slot-machine {
+    position: absolute;
+    transform: translateY(-130px);
+    width: 100vw; /* 根據需要調整 */
+    height: 50px; /* 根據需要調整 */
+    overflow: hidden;
+    display: flex;
+}
+
+/* 統一文字樣式 */
+.text1,.text3 {
+    margin-top: 60px;
+    font-size: 24px;
+    line-height: 50px;
+    height: 50px;
+    text-align: center;
+    color: #eafa09;
+    background-color: rgb(0, 0, 0,0.3);
+    border-radius: 20px;
+    text-shadow: 1.5px 1.5px rgb(242, 3, 255);
+    width: 80px;
+    animation: linear  spin 1.5s infinite ;
+}
+.text2,.text4 {
+    margin-top: 60px;
+    font-size: 24px;
+    line-height: 50px;
+    height: 50px;
+    text-align: center;
+    color: #eafa09;
+    background-color: rgb(0, 0, 0,0.3);
+    border-radius: 20px;
+    text-shadow: 1.5px 1.5px rgb(242, 3, 255);
+    width: 80px;
+    animation: linear  spin 1.5s 0.75s infinite ;
+}
+.text1{
+    margin-left: 10%;
+}
+.text2{
+    margin-left: 38%;
+}
+.text3{
+    margin-left: 10%;
+}
+.text4{
+    margin-left: 10%;
+}
+
+/* 使用 @keyframes 定義文字滾動的動畫 */
+@keyframes spin {
+    0% {
+        transform: translateY(-250%) ;
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+.explosion {
+    display: none;
+    font-size: 40px;
+    color: rgb(74, 242, 239);
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 50%;
+    text-align: center;
+    animation: explode 1.2s ease-out forwards;
+    position: absolute;
+    margin-top: 450px;
+
+}
+
+@keyframes explode {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+        filter: blur(0);
+    }
+    50%{
+        transform: scale(1.5);
+        opacity: 0.8;
+        filter: blur(2px);
+    }
+    100% {
+        transform: scale(5);
+        opacity: 0;
+        filter: blur(8px);
+    }
+}
