@@ -26,9 +26,30 @@ nav a{
     padding: 10px;
     margin: -10px;
 }
-
+.social-links {
+    display: flex;
+    border: 0;
+    background-color: rgb(216, 209, 189);
+    margin-bottom:-12px;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+   
+}
+.social-links a{
+    display: inline-block;  /* 確保a標籤與圖片大小一致 */
+    padding: 0;             /* 去掉內邊距 */
+    margin: 0 5px;              /* 去掉外邊距 */
+    text-align: center;
+    line-height: 30px;
+    
+}
+.social-links img{
+    height: 30px;
+    width: auto;
+    vertical-align: middle;
+}
 .about_me ,.homework ,.game{
-    background-color: rgb(255, 205, 205);
+    background-color: rgb(193, 143, 210);
     margin-bottom:-12px;
     padding: 10px;
     border-radius: 5px 5px 0 0;
@@ -68,8 +89,8 @@ main{
     width: 35%;
 }
 .selfie img{
-    width: 70%;          /* 滿容器寬 */
-    max-width: 200px;     /* 最大寬度限制 */
+    width: 80%;          /* 滿容器寬 */
+    max-width: 230px;     /* 最大寬度限制 */
     min-width: 150px; 
    margin: 0 auto;
   
