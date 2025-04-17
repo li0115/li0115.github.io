@@ -26,28 +26,6 @@ nav a{
     padding: 10px;
     margin: -10px;
 }
-.social-links {
-    display: flex;
-    border: 0;
-    background-color: rgb(216, 209, 189);
-    margin-bottom:-12px;
-    padding: 10px;
-    border-radius: 5px 5px 0 0;
-   
-}
-.social-links a{
-    display: inline-block;  /* 確保a標籤與圖片大小一致 */
-    padding: 0;             /* 去掉內邊距 */
-    margin: 0 5px;              /* 去掉外邊距 */
-    text-align: center;
-    line-height: 30px;
-    
-}
-.social-links img{
-    height: 30px;
-    width: auto;
-    vertical-align: middle;
-}
 .about_me ,.homework ,.game{
     background-color: rgb(193, 143, 210);
     margin-bottom:-12px;
@@ -140,6 +118,7 @@ footer.fixed {
         text-align: center;
     }
 }
+
 /* .rotating img{
     background-color: aliceblue;
     width: 50px;

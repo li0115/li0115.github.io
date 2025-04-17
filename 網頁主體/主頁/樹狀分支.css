@@ -1,0 +1,113 @@
+
+.navigation {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  transform: translateY(20%);
+}
+.navigation span {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  background: #fff;
+  transform: translate(calc(14px * var(--x)), calc(14px * var(--y)));
+  transition: transform 0.5s, width 0.2s, height 0.5s, background 0.5s;
+  transition-delay: calc(0.07s * var(--i));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.navigation.active span {
+
+  width: 45px;
+  height: 45px;
+  background: #37384f;
+  transform: translate(calc(60px * var(--x)), calc(60px * var(--y)));
+
+
+}
+/* 初始狀態，隱藏文字 */
+.navigation span a {
+  opacity: 0;  /* 使文字隱藏 */
+  visibility: hidden;  /* 使文字不可見 */
+  transition: opacity 0.4s, visibility 0.4s linear 0.7s;
+}
+
+/* 當 .active 類別被添加時，顯示文字 */
+.navigation.active span a {
+  opacity: 1;  /* 使文字可見 */
+  visibility: visible;  /* 使文字顯示 */
+  transition: opacity 0.4s, visibility 0.4s linear 0.6s;  /* 文字顯示的過渡效果 */
+  color: rgb(0, 0, 0);
+  padding: 7px 5px;
+  background-color: rgb(193, 143, 210);
+}
+
+.navigation.active .index{
+  width: 85px;
+  height: 45px;
+  transform: translate(calc(90px * var(--x)), calc(60px * var(--y)));
+}
+
+.navigation span ion-icon {
+  color: rgb(255, 255,255);
+  transition: color 0.5s;
+  
+}
+.navigation.active span ion-icon {
+  font-size: 1.35em;
+}
+.navigation.active span.instagram:hover {
+  background:
+  linear-gradient(175deg, rgba(103, 21, 255, 1), rgba(255, 0, 0, 0) 70%),
+  linear-gradient(45deg, rgba(255, 208, 37, 1), rgba(0, 255, 0, 0) 70%),
+  linear-gradient(270deg, rgba(255, 32, 143, 1), rgba(0, 0, 255, 0) 70%);
+
+  border-radius: 10px;
+}
+.navigation.active .facebook:hover ion-icon{
+  color: rgb(31, 122, 250);
+}
+.navigation.active .youtube:hover ion-icon{
+  color: rgb(234, 2, 2);
+}
+.navigation.active .github:hover{
+  background: #890fd0;
+
+}
+.close {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  background: #fff;
+  transition: 0.5s;
+  transition-delay: 0.4s;
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation.active  .close {
+  width: 40px;
+  height: 40px;
+  pointer-events: initial;
+  transition-delay: 0.8s;
+  background: #d6ea7e;
+}
+.navigation  .close ion-icon {
+  font-size: 2em;
+  scale: 0;
+  color: #10131c;
+  transition: 0.5s;
+}
+.navigation.active  .close ion-icon {
+  scale: 1;
+  transition-delay: 1s;
+}

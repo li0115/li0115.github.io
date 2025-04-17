@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Li's website</title>
     <link rel="stylesheet" href="hw1-113611055.css">
+    <link rel="stylesheet" href="樹狀分支.css">
     <link rel="icon" href="BP icon.jpg">
 </head>
 
@@ -16,14 +17,42 @@
         <div class="about_me"><a target="_blank" href="../關於我/關於我.html">About</a></div>
         <div class="homework"><a target="_blank" href="../作品/作品.html">Portfolio</a></div>
         <div class="game"><a target="_blank" href="../網頁遊戲/網頁遊戲.html">js games</a></div>
-        <div class="social-links">
-            <a class="instagram-link" target="_blank" href="https://www.instagram.com/li.0115?igsh=YmxsMXc5NXJ3bzFm&utm_source=qr"><img src="../主頁/instagram-brands-solid.png" alt=""></a>
+
+        <div class="navigation">
+            <span class="instagram" style="--i:0;--x:-1;--y:0;">
+                <ion-icon name="logo-instagram"></ion-icon>
+            </span>
+            <span class="facebook" style="--i:1;--x:1;--y:0;">
+                <ion-icon name="logo-facebook"></ion-icon>
+            </span>
+            <span class="youtube" style="--i:2;--x:0;--y:-1;">
+                <ion-icon name="logo-youtube"></ion-icon>
+            </span>
+            <span class="index" style="--i:3;--x:0;--y:1;">
+                <a>Portfolio</a>
+            </span>
+            <span class="index" style="--i:4;--x:-1;--y:1;">
+                <a>&nbsp About &nbsp</a>
+            </span>
+            <span class="google" style="--i:5;--x:-1;--y:-1;">
+                <ion-icon name="logo-google"></ion-icon>
+            </span>
+            <span class="github" style="--i:1;--x:1;--y:-1;">
+                <ion-icon name="logo-github"></ion-icon>
+            </span>
+            <span class="index" style="--i:7;--x:1;--y:1;">
+                <a>js games</a>
+            </span>
+            <div class="close">
+                <ion-icon name="close-outline"></ion-icon>
+            </div>
         </div>
+        
     </nav>
     <main>
         
         <div class="selfie">
-            <img  src="IMG_5305.jpg" alt="我的大頭照">
+            <img  src="IMG_5305.JPG" alt="我的大頭照">
             <br>
             <dl>
                 <dt>教育</dt>
@@ -60,5 +89,8 @@
     <!-- <div class="rotating">
         <img src="NYCU_logo.png" alt="">
         </div> -->
+    <script src="樹狀分支.js"></script>
+    <script src='https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js'></script>
+    <script src='https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js'></script>
 </body>
 </html>
