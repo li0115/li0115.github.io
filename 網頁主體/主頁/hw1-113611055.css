@@ -1,14 +1,15 @@
 
 header{
-    font-size: 40px;
     background-image: linear-gradient(to  bottom,rgb(255, 165, 180),rgb(118, 62, 116));
-    color: pink;
-    font-family: cursive;
-    padding:10px 0;
     display: flex;
     justify-content: center;
-    background-color: rgb(0, 0, 0);
+}
+header p{
+    height: 20px;
     text-shadow: -1px -1px white, 1px 1px #333;
+    font-size: 40px;
+    color: pink;
+    font-family: cursive;
 }
 nav{
     font-size: 20px;
