@@ -33,14 +33,14 @@
 
 }
 /* 初始狀態，隱藏文字 */
-.navigation span a {
+.navigation  a {
   opacity: 0;  /* 使文字隱藏 */
   visibility: hidden;  /* 使文字不可見 */
   transition: opacity 0.4s, visibility 0.4s linear 0.7s;
 }
 
 /* 當 .active 類別被添加時，顯示文字 */
-.navigation.active span a {
+.navigation.active .index a {
   opacity: 1;  /* 使文字可見 */
   visibility: visible;  /* 使文字顯示 */
   transition: opacity 0.4s, visibility 0.4s linear 0.6s;  /* 文字顯示的過渡效果 */
@@ -48,6 +48,14 @@
   padding: 7px 5px;
   background-color: rgb(193, 143, 210);
 }
+.navigation.active .instagram a {
+  display: flex;
+  opacity: 1;  /* 使文字可見 */
+  visibility: visible;  /* 使文字顯示 */
+  transition: opacity 0.3s, visibility 0.3s linear 0.1s;  /* 文字顯示的過渡效果 */
+  padding: 9px;
+}
+
 
 .navigation.active .index{
   width: 85px;
